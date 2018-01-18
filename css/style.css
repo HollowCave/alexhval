@@ -1,0 +1,214 @@
+body {
+  font: 15px/1.5 Arial, Helvetica, Sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+/* Global */
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+ ul {
+  padding: 0;
+  margin: 0;
+}
+/* Header */
+header {
+  position:fixed;
+  width: 100%;
+  opacity: 0.95;
+  background: #707B7C;
+  color: white;
+  padding-top: 15px;
+  min-height: 70px;
+  border-bottom: rgb(0, 172, 237) 3px solid;
+}
+/*Icons*/
+#LinkedInIcon {
+  color: rgb(0, 172, 237);
+  margin-top: 5px;
+}
+#GitHubIcon {
+  color: rgb(0, 172, 237);
+  margin-top: 5px;
+}
+#StackOverflowIcon {
+  color: rgb(0, 172, 237);
+  margin-top: 5px;
+}
+#htmlIcon {
+  color: #E34C26;
+  margin:5px;
+}
+#cssIcon {
+  color: #0066ff;
+  margin: 5px;
+}
+#javascriptIcon {
+  color: #f7df1e;
+  margin: 5px;
+}
+/*Header links*/
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+/*Spacing out the list items within the Header*/
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+/*Header title moved to the left*/
+ header #title {
+  float: left;
+}
+header #title h1 {
+  margin: 0;
+  font-size: 30px;
+}
+header nav {
+  float: right;
+  margin-top: 10px;
+  padding: none;
+}
+.highlight, .current {
+  color: rgb(0, 172, 237);
+  font-weight: bold;
+}
+header a:hover {
+  color: #cccccc;
+  font-weight: bold;
+}
+/*showCase*/
+#showCase {
+  min-height: 400px;
+  background-image: url('../img/showcase.jpeg');
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px
+}
+#showCase h1 {
+  margin-top: 225px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+#showCase a {
+  font-size: 20px;
+  margin: 5px;
+  border-style: outset;
+}
+/*Newsletter id*/
+#newsLetter {
+  height: auto;
+  width: auto;
+  padding: 15px;
+  background: #707B7C;
+  border-bottom: rgb(0, 172, 237) 3px solid;
+}
+/*Skills and flexbox styling*/
+#skills {
+  min-height: 400px;
+  height: auto;
+  width: auto;
+  text-align: center;
+  color: white;
+  background: #707B7C;
+}
+.container-1 {
+  display: flex;
+}
+.container-1 div {
+  /*border: 1px #ccc solid;*/
+  padding: 10px;
+}
+.box-1{
+  flex: 2;
+}
+.box-2 {
+  flex: 2;
+}
+.box-3 {
+  flex: 2;
+}
+#spacing1 {
+  margin: 15px;
+}
+#spacing2 {
+  margin: 15px;
+}
+#spacing3 {
+  margin: 15px;
+}
+#spacing4 {
+  margin: 15px;
+}
+/*Project Section*/
+.project{
+  min-height: 400px;
+  text-align: center;
+  color: white;
+  margin-bottom: -20px;
+  background: url('../img/contactme.jpg') no-repeat 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 1em;
+}
+.grid div {
+  padding: 1em;
+}
+/*About Me section*/
+.about {
+  width: auto;
+  min-height: 400px;
+  background: url('../img/contactme.jpg') no-repeat 0 -400px;
+  margin-bottom: -20px;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+
+.about h1 {
+  margin-top: 10px;
+  margin-bottom: -20px;
+  font-size: 40px;
+}
+.about h2 {
+  margin-top: 30px;
+}
+.about p {
+  width: 40%;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
+  background-color: #707B7C;
+  text-align: center;
+}
+/*Media Queries*/
+@media(max-width: 768px) {
+  header #title,
+  header nav,
+  header nav li {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+}
