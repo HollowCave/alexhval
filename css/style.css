@@ -86,11 +86,11 @@ header a:hover {
   color: #cccccc;
   font-weight: bold;
 }
+
 /*showCase*/
 #showCase {
   min-height: 400px;
   background-image: url('../img/showcase.jpeg');
-  height: 75vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -118,15 +118,19 @@ header a:hover {
 }
 /*Skills and flexbox styling*/
 #skills {
+  margin-top: -15px;
+  margin-bottom: -15px;
+  padding: 20px 0;
+  background: #707B7C;
   min-height: 400px;
   height: auto;
   width: auto;
   text-align: center;
-  color: white;
-  background: #707B7C;
+  color: #fff;
 }
 .container-1 {
   display: flex;
+  flex-wrap: wrap;
 }
 .container-1 div {
   /*border: 1px #ccc solid;*/
@@ -155,11 +159,16 @@ header a:hover {
 }
 /*Project Section*/
 .project{
+  padding: 10px;
+  margin-top: -20px;
+  background: #cccccc;
   min-height: 400px;
   text-align: center;
-  color: white;
+  color: #000;
   margin-bottom: -20px;
-  background: url('../img/contactme.jpg') no-repeat 0;
+}
+.project a {
+  color: #000;
 }
 .grid {
   display: grid;
@@ -171,13 +180,14 @@ header a:hover {
 }
 /*About Me section*/
 .about {
+  background: #cccccc;
   width: auto;
   min-height: 400px;
-  background: url('../img/contactme.jpg') no-repeat 0 -400px;
+  padding: 10px;
   margin-bottom: -20px;
   font-size: 15px;
   text-align: center;
-  color: white;
+  color: #000;
 }
 
 .about h1 {
@@ -205,10 +215,14 @@ footer {
 @media(max-width: 768px) {
   header #title,
   header nav,
-  header nav li {
+  header nav li,
+   {
     float: none;
     text-align: center;
     width: 100%;
+  }
+  header {
+    padding: 20px;
   }
 
 }
