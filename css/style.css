@@ -220,9 +220,19 @@ footer {
     float: none;
     text-align: center;
     width: 100%;
+    min-height: 30px;
   }
   header {
     padding: 20px;
+    position: absolute;
+  }
+  .about {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .project {
+    width: 100%;
+    position: absolute;
   }
 
 }
